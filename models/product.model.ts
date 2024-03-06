@@ -4,6 +4,7 @@ interface IProduct {
   name: string | null;
   price: number | null;
   description: string | null;
+  category?: string | null;
   coverImg?: string;
 }
 
@@ -24,7 +25,9 @@ const productSchema = new mongoose.Schema(
       required: true,
     },
 
-    category: ["Sneakers", "Boots", "Loafers"],
+    category: {
+      type: String,
+    },
 
     description: {
       type: String,

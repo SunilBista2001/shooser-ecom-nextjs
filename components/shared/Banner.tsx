@@ -48,8 +48,7 @@ const Banner = () => {
             alt="Hero image"
             width={350}
             height={300}
-            objectFit="contain"
-            className="-skew-y-6"
+            className="-skew-y-6 "
           />
         </div>
       </div>

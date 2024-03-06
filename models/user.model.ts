@@ -5,6 +5,7 @@ interface IUser {
   name: string | null;
   email: string;
   avatar?: string | null;
+  role: string;
 }
 
 export interface IUserDocument extends IUser, Document {
@@ -18,6 +19,11 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
       unique: true,
+    },
+
+    role: {
+      type: String,
+      default: "user",
     },
 
     email: {

@@ -6,7 +6,8 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 
 const Summary = () => {
-  const cart = useCart();
+  const cart = useCart((state) => state.items);
+  const setCart = useCart();
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
@@ -18,7 +19,7 @@ const Summary = () => {
       });
 
       await res.json();
-      cart.removeAll();
+      setCart.removeAll();
     } catch (error) {
       console.log(error);
       toast.error("Failed to checkout");

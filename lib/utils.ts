@@ -11,3 +11,13 @@ export function formatPrice(price: number) {
     currency: "IDR",
   }).format(price);
 }
+
+export const readImgAsDataURL = (file: File | Blob): Promise<string> => {
+  return new Promise((resolve) => {
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      if (typeof reader.result === "string") resolve(reader.result);
+    };
+    reader.readAsDataURL(file);
+  });
+};

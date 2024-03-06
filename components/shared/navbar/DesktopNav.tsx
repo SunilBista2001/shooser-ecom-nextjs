@@ -38,44 +38,16 @@ const DesktopNav = () => {
                         height={120}
                       />
                       <div className="mb-2 mt-4 text-lg font-medium">
-                        Skaters
+                        Shooser
                       </div>
                       <p className="text-sm leading-tight text-muted-foreground">
-                        An open source ecommerce skateshop built with everything
+                        An open source ecommerce shoe shop built with everything
                         new in Next.js
                       </p>
                     </Link>
                   </NavigationMenuLink>
                 </li>
-                {/* <ListItem href='/products' title='Products'>
-                  All the products we have to offer
-                </ListItem>
-                <ListItem href='/#categories' title='Categories'>
-                  See all categories we have
-                </ListItem>
-                <ListItem href='/dashboard/stores' title='Create store'>
-                  Create store and start selling products
-                </ListItem> */}
               </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>Categories</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              {/* <ul className='grid w-[400px] gap-3 p-6 md:w-[500px] md:grid-cols-2'>
-                <ListItem href='/products?category=skateboards' title='Skateboards'>
-                  Explore the skateboards category
-                </ListItem>
-                <ListItem href='/products?category=clothing' title='Clothing'>
-                  Explore the clothing category
-                </ListItem>
-                <ListItem href='/products?category=shoes' title='Shoes'>
-                  Explore the shoes category
-                </ListItem>
-                <ListItem href='/products?category=accessories' title='Accessories'>
-                  Explore the accessories category
-                </ListItem>
-              </ul> */}
             </NavigationMenuContent>
           </NavigationMenuItem>
         </NavigationMenuList>

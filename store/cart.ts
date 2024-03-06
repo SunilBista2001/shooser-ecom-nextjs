@@ -17,12 +17,11 @@ const useCart = create(
       addItem: (data: typeof Product) => {
         set({ items: data });
       },
+
       removeItem: (id: string) => {
         const items = get().items || null;
         // @ts-ignore
         const newItems = items?.products?.filter((item) => item._id !== id);
-
-        console.log(newItems);
 
         set({ items: newItems });
       },

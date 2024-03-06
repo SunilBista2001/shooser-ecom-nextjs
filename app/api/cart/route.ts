@@ -2,7 +2,6 @@ import { auth } from "@/lib/auth";
 import { connectToMongoDB } from "@/lib/db";
 import Cart from "@/models/cart.model";
 import Product from "@/models/product.model";
-import { error } from "console";
 
 export const POST = async (request: Request | null) => {
   try {

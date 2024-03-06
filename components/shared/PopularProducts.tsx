@@ -6,6 +6,8 @@ const PopularProducts = async () => {
   const session = await auth();
   const products = session?.user ? await getProducts() : [];
 
+  console.log(products);
+
   const sleep = (ms: number) =>
     new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -21,6 +23,7 @@ const PopularProducts = async () => {
           price={product.price!}
           name={product.name!}
           description={product.description!}
+          coverImg={product.coverImg!}
         />
       ))}
     </div>

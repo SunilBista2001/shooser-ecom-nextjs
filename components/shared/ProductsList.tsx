@@ -15,6 +15,7 @@ const ProductsList = ({
           id={product._id}
           description={product.description!}
           price={product.price!}
+          coverImg={product.coverImg!}
         />
       ))}
     </div>

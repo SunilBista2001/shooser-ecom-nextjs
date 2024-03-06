@@ -1,6 +1,6 @@
-import { authAction } from "@/actions";
+import { loginAction } from "@/actions";
 import { Button } from "@/components/ui/button";
-import { GithubIcon } from "lucide-react";
+import { GitBranchPlus, GithubIcon } from "lucide-react";
 import Link from "next/link";
 
 const SignUp = () => {
@@ -9,9 +9,11 @@ const SignUp = () => {
       <h1 className="text-xl mt-1 text-center">
         Sign up to <span className="text-blue-500 font-medium">Shooeser</span>
       </h1>
-      <form action={authAction} className="flex justify-center my-2">
+      <form action={loginAction} className="flex justify-center my-2">
         <Button>
-          <GithubIcon width={20} height={20} className="mr-1" />
+          {/* <GithubIcon width={20} height={20} className="mr-1" />
+           */}
+          <GitBranchPlus size={20} className="mr-2" />
           Sign up with Github
         </Button>
       </form>
